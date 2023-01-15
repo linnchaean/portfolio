@@ -50,7 +50,7 @@ body{
                     font-weight: 900;
                     animation: main-h2 3s linear 1 alternate none;
                     margin: 0;
-                    &:nth-of-type(2){animation: main-h2_2 4s linear 1 alternate none;}
+                    &:nth-of-type(2){animation: main-h2_2 2s linear 1 alternate none;}
                 }
                 b{
                     font-size: 6vh;
@@ -62,7 +62,7 @@ body{
                     
                     p{
                         font-weight: 400;
-                        animation: contact 5s linear 1 alternate none;
+                        animation: contact 2.5s linear 1 alternate none;
                         }
                 }
                 
@@ -74,7 +74,7 @@ body{
                 border-radius: 100%;
                 margin-left: 60%;
                 margin-top: -20%;
-                animation: contact 5s linear 1 alternate none;
+                animation: contact 2.5s linear 1 alternate none;
                 // position: absolute;
                 // bottom: -35%; right: -10%;
                 position: relative;
