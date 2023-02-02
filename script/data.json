@@ -1,9 +1,28 @@
 {
     "project":[
         {
+            "code":9,
+            "photo":"./009/robot.jpeg",
+            "detail":"마로솔 웹, 모바일 사이트 구축",
+            "year":"2023",
+            "title":"마로솔",
+            "project":"WORK",
+            "date":"2023.01",
+            "ver":"[PC/MOBILE]",
+            "comment":"react.js 기반으로 작업된 퍼블리싱 기여도 80% 빅웨이브 로보틱스의 로봇 중고거래 플랫폼 입니다.<br>storybook을 활용한 컴포넌트 관리로 재사용성을 고려하였으며, tailwind 라이브러리를 활용한 스타일링으로 html에서 직접적인 스타일 처리가 되어 있습니다.<br>현재 개발 진행 중으로 링크첨부가 불가하여 이미지로 대체합니다.",
+            "origin":"",
+            "url":"",
+            "img1":"./009/login.png",
+            "img2":"./009/project.png",
+            "img3":"./009/content.png",
+            "img4":"./009/content_detail.png",
+            "img5":"./009/storybook.png",
+            "color":"#00c389"
+        },
+        {
             "code":8,
             "photo":"./008/KakaoTalk_Photo_2023-01-16-09-44-30.png",
-            "detail":"B&VIIT AI 웹, 모바일 사이트 제작",
+            "detail":"B&VIIT AI 웹, 모바일 사이트 구축",
             "year":"2022",
             "title":"B&VIIT AI",
             "project":"WORK",
@@ -41,7 +60,7 @@
         {
             "code":6,
             "photo":"./006/KakaoTalk_Photo_2023-01-16-09-47-09.png",
-            "detail":"스마일 토토 웹 리뉴얼",
+            "detail":"스마일 토토 웹 구축",
             "year":"2022",
             "title":"스마일토토",
             "project":"WORK",
@@ -60,7 +79,7 @@
         {
             "code":5,
             "photo":"./005/girin-main.png",
-            "detail":"기린성형외과 반응형웹 제작",
+            "detail":"기린성형외과 반응형웹 구축",
             "year":"2022",
             "title":"기린성형외과US,CN,JP,TH",
             "project":"WORK",
