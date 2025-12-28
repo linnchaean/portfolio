@@ -2,7 +2,7 @@
     "project":[
         {
             "code":11,
-            "photo":"./011/yesfile.jpeg",
+            "photo":"./011/yesfile.png",
             "detail":"예스파일 웹, 모바일 유지보수",
             "year":"2025",
             "title":"예스파일",
@@ -21,7 +21,7 @@
         },
         {
             "code":10,
-            "photo":"./010/applefile.jpeg",
+            "photo":"./010/applefile.png",
             "detail":"애플파일 웹, 모바일 유지보수",
             "year":"2025",
             "title":"애플파일",
