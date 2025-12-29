@@ -138,7 +138,10 @@ body{
                 .intro{
                     margin: 7vh 0;
                     line-height: 3vh;
-                    p{color: #555;}
+                    p{
+                        color: #555;
+                        font-weight: 400;
+                    }
                 }
                 .study{
                     p{
@@ -378,8 +381,12 @@ body{
                 margin: 5vh 0;
             }
             .comment{
-                height: 35vh;
-                overflow: scroll;
+                height: 40%;
+                margin-bottom: 10%;
+                overflow: auto;
+                &::-webkit-scrollbar {display: block; width: 5px; height: 100%;}
+                &::-webkit-scrollbar-thumb{background-color: #ffffffb7; border-radius: 12px;}
+                &::-webkit-scrollbar-track{background-color: #ffffff41;  border-radius: 12px;}
             }
             .btn{
                 margin-top: 6vh;
@@ -421,6 +428,7 @@ body{
             background: url(../LOGO/close.png) center no-repeat;
             position: sticky; top: 12%; right: 9%;
             cursor: pointer;
+            &:hover{opacity: 0.5;}
         }
     }
 
@@ -440,14 +448,7 @@ body{
 // phone
 @media (max-width: 767px){
     body{
-        header{
-            h1{
-                a{
-                    font-size: 0;
-                    &::before{content: url(../LOGO/logo-s.png);}
-                }
-            }
-        }
+        
         main{
             .main{
                 padding-left: 0%;
@@ -480,14 +481,10 @@ body{
                 position: relative;
                 .a-txt{
                     width: 85%;
-                    margin: 40% auto;
-                    padding-top: 18vh;
+                    margin: 15% auto;
+                    padding-top: 15%;
                     h2{
-                        font-size: 4vh;
-                        position: absolute; top: 120vh;
-                        b{
-                            font-size: 4vh;
-                        }
+                        display: none;
                     }
                     .name{
                         margin-top: 5vh;
@@ -503,8 +500,7 @@ body{
                         }
                     }
                     .intro{
-                        margin: 8vh 0;
-                        p{font-size: 2.1vh;}
+                        display: none;
                     }
                     .study{
                         p{
@@ -620,10 +616,11 @@ body{
                 .p-slide{
                     top: 30%; left: 10%;
                     overflow: hidden;
-                    width: 100%; height: 100vh;
+                    width: 100%;
+                    height: 35vh;
                     ul{
                         width: 100%;
-                        height: 35vh;
+                        height: 100%;
                         li{
                             width: 20vh; 
                             height: 100%;
@@ -677,82 +674,77 @@ body{
                     bottom: 5%; right: 5%;
                 }
             }
-            .popup{
-                width: 85%; height: 80vh;
-                border-radius: 30px;
-                display: none;
-                justify-content: space-between;
-                background-color: #fff;
-                position: absolute; top: 0;
-                z-index: 99;
-                .popup-txt{
-                    width: 40%;
-                    padding: 0 5vh;
-                    background-color: #487029;
-                    color: #fff;
-                    border-radius: 30px 0 0 30px;
-                    .title{
-                        margin-top: 10vh;
-                        p{
-                            color: #000;
-                            width: 13vh;
-                            font-size: 1.5vh;
-                            font-weight: 500;
-                            text-align: center;
-                            padding: 0.3vh;
-                            border-radius: 20px;
-                            background-color: #fff;
-                            box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.102);
-                        }
-                        h2{
-                            font-size: 4vh;
-                            font-weight: 500;
-                        }
-                    }
-                    .about{
-                        margin: 5vh 0;
-                    }
-                    .btn{
-                        margin-top: 6vh;
+        }
+        .popup{
+            width: 85%; height: 80vh;
+            border-radius: 30px;
+            display: none;
+            justify-content: space-between;
+            background-color: #fff;
+            position: absolute; top: 0;
+            z-index: 99;
+            .popup-txt{
+                padding: 0 1vh;
+                width: 45%;
+                background-color: #487029;
+                color: #fff;
+                border-radius: 30px 0 0 30px;
+                .title{
+                    margin-top: 6vh;
+                    p{
+                        color: #000;
+                        width: 13vh;
+                        font-size: 1.5vh;
+                        font-weight: 500;
                         text-align: center;
-                        a{
-                            color: #eee;
-                            border: 1px solid #fff;
-                            padding: 0.5vh 2vh;
-                            border-radius: 10px;
-                            transition: 0.5s;
-                            font-weight: 500;
-                            vertical-align: middle;
-                            &:hover{
-                                background-color: #fff;
-                                color: #000;
-                            }
-                        }
+                        padding: 0.3vh;
+                        border-radius: 20px;
+                        background-color: #fff;
+                        box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.102);
                     }
-        
-                }
-                .popup-img{
-                    width: 70%;
-                    overflow: scroll;
-                    margin-top: 7vh;
-                    position: relative;
-                    .slide{
-                        width: 90%;
-                        margin: 0 auto;
-                        img{
-                            width: 100%;
-                            margin-bottom: 5vh;
-                            // margin: 0 auto;
-                            box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.102);
-                        }
+                    h2{
+                        font-size: 4vh;
+                        font-weight: 500;
+                        text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
                     }
                 }
-                .close{
-                    width: 40px; height: 40px;
-                    background: url(../LOGO/close.png) center no-repeat;
-                    position: sticky; top: 12%; right: 9%;
-                    cursor: pointer;
+                .about{
+                    margin: 5vh 0;
                 }
+                .btn{
+                    font-size: 0;
+                    a{
+                        display: inline-block;
+                        width: 50%;
+                        height: 30px;
+                        line-height: 28px;
+                        font-size: 12px;
+                        padding: 0;
+                    }
+                }
+    
+            }
+            .popup-img{
+                width: 55%;
+                overflow: scroll;
+                margin-top: 7vh;
+                position: relative;
+                .slide{
+                    width: 90%;
+                    margin: 0 auto;
+                    img{
+                        width: 100%;
+                        margin-bottom: 5vh;
+                        // margin: 0 auto;
+                        box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.102);
+                    }
+                }
+            }
+            .close{
+                width: 40px; height: 40px;
+                background: url(../LOGO/close.png) center no-repeat;
+                position: sticky; top: 12%; right: 9%;
+                cursor: pointer;
             }
         }
     }

@@ -32,7 +32,8 @@ $('.icon').on('click',function(){
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 30
+    spaceBetween: 15,
+    slidesOffsetAfter: 50
 });
 
 let data;
@@ -263,8 +264,6 @@ function cursorFn(x,y){
 
 }
 
-
 window.addEventListener('mousemove',function(e){
     cursorFn(e.clientX, e.clientY);
 });
-s
